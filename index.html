@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Floral Boutique | Catalog</title>
+  </head>
+  <body>
+    <header class="header container">
+      <a class="header__logo" href="index.html">
+        <img class="header__image" src="img/logo.svg" width="177" height="17" alt="Логотип сайта Floral Boutique">
+      </a>
+
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" href="#">Каталог</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Подписка</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Отзывы</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+        </ul>
+
+        <a class="navigation__number" href="tel:+79239995566">+7 (923) 999 55 66</a>
+        <a class="navigation__card" href="#" aria-label="Корзина для товаров"></a>
+      </nav>
+    </header>
+    <main class="main container">
+      <!-- catalog -->
+      <section class="catalog">
+        <div class="catalog__container">
+          <h1 class="catalog__title">Каталог</h1>
+        </div>
+
+        <!-- filter -->
+        <form class="filter" action="" method="post">
+          <ul class="filter__list">
+            <li class="filter__item">
+              <label class="visually-hidden" for="category">Категория</label>
+              <select class="filter__select filter__select--category" name="category" id="category">
+                <option value="value1" class="category__item" selected="">Категория</option>
+                <option value="value2" class="category__item">value2</option>
+                <option value="value3" class="category__item">value3</option>
+                <option value="value4" class="category__item">value4</option>
+                <option value="value5" class="category__item">value5</option>
+              </select>
+            </li>
+            <li class="filter__item">
+              <label class="visually-hidden" for="flowers">Цветы</label>
+              <select class="filter__select filter__select--flowers" name="flowers" id="flowers">
+                <option value="value1" class="category__item" selected="">Цветы</option>
+                <option value="value2" class="category__item">value2</option>
+                <option value="value3" class="category__item">value3</option>
+                <option value="value4" class="category__item">value4</option>
+                <option value="value5" class="category__item">value5</option>
+              </select>
+            </li>
+            <li class="filter__item">
+              <label class="visually-hidden" for="price">Цена</label>
+              <select class="filter__select filter__select--price" name="price" id="price">
+                <option value="value1" class="category__item" selected="">Цена</option>
+                <option value="value2" class="category__item">value2</option>
+                <option value="value3" class="category__item">value3</option>
+                <option value="value4" class="category__item">value4</option>
+                <option value="value5" class="category__item">value5</option>
+              </select>
+            </li>
+          </ul>
+        </form>
+
+        <ul class="catalog__list card">
+          <li class="card__item">
+            <h2 class="card__title">Букет «Весна»</h2>
+            <img class="card__image" src="img/1.jpg" width="320" height="270" alt="Букет «Весна»">
+            <p class="card__price">1 500 ₽</p>
+            <button class="card__link" type="button">Заказать</button>
+          </li>
+          <li class="card__item">
+            <h2 class="card__title">Букет «Признание»</h2>
+            <img class="card__image" src="img/2.jpg" width="320" height="270" alt="Букет «Признание»">
+            <p class="card__price">3 500 ₽</p>
+            <button class="card__link" type="button">Заказать</button>
+          </li>
+          <li class="card__item">
+            <h2 class="card__title">Букет «Сюрприз»</h2>
+            <img class="card__image" src="img/3.jpg" width="320" height="270" alt="Букет «Сюрприз»">
+            <p class="card__price">2 700 ₽</p>
+            <button class="card__link" type="button">Заказать</button>
+          </li>
+          <li class="card__item">
+            <h2 class="card__title">Букет «Апрель»</h2>
+            <img class="card__image" src="img/4.jpg" width="320" height="270" alt="Букет «Апрель»">
+            <p class="card__price">2 600 ₽</p>
+            <button class="card__link" type="button">Заказать</button>
+          </li>
+          <li class="card__item">
+            <h2 class="card__title">Букет «Сухоцветы»</h2>
+            <img class="card__image" src="img/5.jpg" width="320" height="270" alt="Букет «Сухоцветы»">
+            <p class="card__price">1 800 ₽</p>
+            <button class="card__link" type="button">Заказать</button>
+          </li>
+          <li class="card__item">
+            <h2 class="card__title">Букет «Нежность»</h2>
+            <img class="card__image" src="img/6.jpg" width="320" height="270" alt="Букет «Нежность»">
+            <p class="card__price">2 900 ₽</p>
+            <button class="card__link" type="button">Заказать</button>
+          </li>
+          <li class="card__item">
+            <h2 class="card__title">Букет «Яркость»</h2>
+            <img class="card__image" src="img/7.jpg" width="320" height="270" alt="Букет «Яркость»">
+            <p class="card__price">3 300 ₽</p>
+            <button class="card__link" type="button">Заказать</button>
+          </li>
+          <li class="card__item">
+            <h2 class="card__title">Букет «Любовь»</h2>
+            <img class="card__image" src="img/8.jpg" width="320" height="270" alt="Букет «Любовь»">
+            <p class="card__price">4 200 ₽</p>
+            <button class="card__link" type="button">Заказать</button>
+          </li>
+          <li class="card__item">
+            <h2 class="card__title">Букет «Ласка»</h2>
+            <img class="card__image" src="img/9.jpg" width="320" height="270" alt="Букет «Ласка»">
+            <p class="card__price">4 800 ₽</p>
+            <button class="card__link" type="button">Заказать</button>
+          </li>
+        </ul>
+
+        <button class="catalog__show" type="button">Смотреть еще</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <a class="header__logo" href="index.html">
+          <img class="header__image" src="img/logo.svg" width="177" height="17" alt="Логотип сайта Floral Boutique">
+        </a>
+
+        <ul class="navigation__list footer__list">
+          <li class="navigation__item"><a class="navigation__link" href="#">Каталог</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Подписка</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Отзывы</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+        </ul>
+
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link social__link--instagram" href="#" aria-label="Instagram"></a></li>
+            <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Facebook"></a></li>
+            <li class="social__item"><a class="social__link social__link--pinterest" href="#" aria-label="Pinterest"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
