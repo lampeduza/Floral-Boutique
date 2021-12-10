@@ -93,7 +93,7 @@ picture {
   padding-bottom: 80px; }
 
 .catalog__container {
-  background-image: url("/img/background.jpg");
+  background-image: url("../img/background.jpg");
   background-size: 1240px 350px;
   width: 1240px;
   height: 350px; }
@@ -182,7 +182,7 @@ picture {
   padding: 21px 25px 21px 18px;
   color: inherit;
   background-color: transparent;
-  background-image: url("/img/arrow-down.svg");
+  background-image: url("../img/arrow-down.svg");
   background-size: 16px 8px;
   background-repeat: no-repeat;
   background-position: 97% 50%; }
@@ -225,7 +225,7 @@ picture {
     left: 0;
     width: 24px;
     height: 24px;
-    background-image: url("/img/card.svg"); }
+    background-image: url("../img/card.svg"); }
 
 .footer {
   grid-row: 3 / 4;
@@ -244,6 +244,9 @@ picture {
   margin-left: 250px; }
 
 .social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 20px);
   grid-column-gap: 25px;
@@ -266,15 +269,10 @@ picture {
     background-repeat: no-repeat;
     background-size: 20px; }
   .social__link--instagram::after {
-    background-image: url("/img/instagram.svg"); }
+    background-image: url("../img/instagram.svg"); }
   .social__link--facebook::after {
-    background-image: url("/img/facebook.svg"); }
+    background-image: url("../img/facebook.svg"); }
   .social__link--pinterest::after {
-    background-image: url("/img/pinterest.svg"); }
-
-.social__list {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
+    background-image: url("../img/pinterest.svg"); }
 
 /*# sourceMappingURL=style.css.map */
