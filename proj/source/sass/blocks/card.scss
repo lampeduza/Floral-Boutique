@@ -1,0 +1,30 @@
+.card {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-gap: 50px;
+}
+
+.card__item {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	background-color: $button-color;
+}
+
+.card__title {
+	@include h2;
+}
+
+.card__image {
+	order: -1;
+}
+
+.card__price {
+	margin: 0 0 20px 0;
+	color: $base-color;
+	text-align: center;
+}
+
+.card__link {
+	@include button;
+}

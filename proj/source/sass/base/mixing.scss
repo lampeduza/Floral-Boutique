@@ -1,0 +1,58 @@
+/* reset list */
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* h1 */
+@mixin h1 {
+  color: $h1-color;
+  font-family: $secondary-font;
+  font-size: 62px;
+}
+
+/* h2 */
+@mixin h2 {
+  font-family: $secondary-font;
+  font-weight: $light-font;
+  font-size: 22px;
+  margin: 15px 0 5px;
+  text-align: center;
+}
+
+/* button */
+@mixin button {
+  color: $button-color;
+  background-color: $h1-color;
+  font-size: 16px;
+  padding: 13px;
+  width: 174px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  border: none;
+}
+
+/* secondButton */
+@mixin secondButton {
+  border: 1px solid $base-color;
+  padding: 24px;
+  background-color: $transparent-color;
+  color: $base-color;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  width: 380px;
+}
+
+/* select */
+@mixin select {
+  width: 100%;
+  appearance: none;
+  border: 1px solid $base-color;
+  padding: 21px 25px 21px 18px;
+  color: inherit;
+  background-color: transparent;
+}

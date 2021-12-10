@@ -1,0 +1,27 @@
+.catalog {
+	display: grid;
+	grid-template-rows: repeat(4, auto);
+	grid-gap: 50px;
+	padding-bottom: 80px;
+}
+
+.catalog__container {
+	background-image: url('/img/background.jpg');
+	background-size: 1240px 350px;
+	width: 1240px;
+	height: 350px;
+}
+
+.catalog__title {
+	@include h1;
+	margin: 136px 0 136px 110px;
+}
+
+.catalog__list {
+	@include reset-list;
+}
+
+.catalog__show {
+	@include secondButton;
+	grid-row: 4 / 5;
+}

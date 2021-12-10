@@ -1,0 +1,19 @@
+/* Merriweather light */
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/merriweather_light.woff2") format("woff2"),
+    url("../fonts/merriweather_light.woff") format("woff");
+}
+
+/* Source Sans Pro regular */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/source-sans-pro_regular.woff2") format("woff2"),
+    url("../fonts/source-sans-pro_regular.woff") format("woff");
+}

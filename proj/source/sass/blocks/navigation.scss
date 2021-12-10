@@ -1,0 +1,40 @@
+.navigation {
+	display: grid;
+	grid-template-columns: auto auto 24px;
+	align-items: center;
+	grid-column-gap: 50px;
+}
+
+.navigation__list {
+	@include reset-list;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.navigation__item:not(:last-child) {
+	margin-right: 35px;
+}
+
+.navigation__link {
+	color: inherit;
+}
+
+.navigation__number {
+	color: inherit;
+}
+
+.navigation__card {
+	position: relative;
+	width: 24px;
+	height: 24px;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 24px;
+		height: 24px;
+		background-image: url('/img/card.svg');
+	}
+}

@@ -1,0 +1,14 @@
+.filter__list {
+	@include reset-list;
+	display: grid;
+	grid-template-columns: repeat(3, 380px);
+	grid-column-gap: 50px;
+}
+
+.filter__select {
+	@include select;
+	background-image: url('/img/arrow-down.svg');
+	background-size: 16px 8px;
+	background-repeat: no-repeat;
+	background-position: 97% 50%;
+}
