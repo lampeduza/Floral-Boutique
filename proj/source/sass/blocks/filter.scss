@@ -7,7 +7,7 @@
 
 .filter__select {
 	@include select;
-	background-image: url('/img/arrow-down.svg');
+	background-image: url('../img/arrow-down.svg');
 	background-size: 16px 8px;
 	background-repeat: no-repeat;
 	background-position: 97% 50%;
