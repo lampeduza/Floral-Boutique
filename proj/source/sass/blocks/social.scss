@@ -1,3 +1,37 @@
 .social__list {
 	@include reset-list;
+	display: grid;
+	grid-template-columns: repeat(3, 20px);
+	grid-column-gap: 25px;
+	align-items: center;
+}
+
+.social__link {
+	display: block;
+	position: relative;
+	width: 20px;
+	height: 20px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		background-repeat: no-repeat;
+		background-size: 20px;
+	}
+
+	&--instagram::after {
+		background-image: url('../img/instagram.svg');
+	}
+
+	&--facebook::after {
+		background-image: url('../img/facebook.svg');
+	}
+
+	&--pinterest::after {
+		background-image: url('../img/pinterest.svg');
+	}
 }
