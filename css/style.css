@@ -255,44 +255,42 @@ picture {
 
 .footer__wrapper {
   display: grid;
-  grid-template-columns: 177px auto 110px;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-column-gap: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
 
-.footer__list {
-  margin-left: 250px; }
+.footer__logo {
+  justify-self: start; }
+
+.footer__navigation {
+  justify-self: center; }
+
+.social {
+  justify-self: end; }
 
 .social__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, 20px);
-  grid-column-gap: 25px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.social__item {
+  margin-right: 25px; }
+  .social__item:last-child {
+    margin-right: 0; }
+
+.social__icon {
+  display: block; }
 
 .social__link {
   display: block;
-  position: relative;
   width: 20px;
   height: 20px; }
-  .social__link::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    background-size: 20px; }
-  .social__link--instagram::after {
-    background-image: url("../img/instagram.svg"); }
-  .social__link--facebook::after {
-    background-image: url("../img/facebook.svg"); }
-  .social__link--pinterest::after {
-    background-image: url("../img/pinterest.svg"); }
 
 /*# sourceMappingURL=style.css.map */
