@@ -94,13 +94,14 @@ picture {
 
 .catalog__container {
   background-image: url("../img/background.jpg");
-  background-size: 1240px 350px;
-  width: 1240px;
-  height: 350px; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 350px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .catalog__container {
       background-image: url("../img/background@x2.jpg");
-      background-size: 1240px 350px; } }
+      background-size: cover; } }
 
 .catalog__title {
   color: #59313b;
@@ -118,26 +119,25 @@ picture {
   padding: 24px;
   background-color: transparent;
   color: #40393b;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-top: 20px;
   width: 380px;
-  grid-row: 4 / 5; }
+  cursor: pointer;
+  grid-row: 4 / 5;
+  grid-column: 1 / -1;
+  justify-self: center;
+  cursor: pointer; }
+  .catalog__show:hover, .catalog__show:focus, .catalog__show:active {
+    background-color: #e5e3e1;
+    border-color: #706a6c; }
 
 .card {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-gap: 50px; }
+  grid-gap: 50px;
+  margin-bottom: 20px; }
 
 .card__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: grid;
+  justify-items: center;
   padding: 30px;
   background-color: #fafafa; }
 
@@ -145,18 +145,14 @@ picture {
   font-family: "Merriweather", "Arial", sans-serif;
   font-weight: 300;
   font-size: 22px;
-  margin: 15px 0 5px;
-  text-align: center; }
+  margin: 15px 0 5px; }
 
 .card__picture {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1; }
+  grid-row-start: 1; }
 
 .card__price {
   margin: 0 0 20px 0;
-  color: #40393b;
-  text-align: center; }
+  color: #40393b; }
 
 .card__link {
   color: #fafafa;
@@ -164,10 +160,13 @@ picture {
   font-size: 16px;
   padding: 13px;
   width: 174px;
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-  border: none; }
+  border: none;
+  cursor: pointer; }
+  .card__link:hover {
+    color: #fff;
+    background-color: #3a2026; }
+  .card__link:active, .card__link:focus {
+    background-color: #3a2026; }
 
 .filter__list {
   margin: 0;
@@ -200,6 +199,7 @@ picture {
   padding: 21px 25px 21px 18px;
   color: inherit;
   background-color: transparent;
+  cursor: pointer;
   position: relative; }
 
 .navigation {
@@ -223,11 +223,16 @@ picture {
 .navigation__item:not(:last-child) {
   margin-right: 35px; }
 
-.navigation__link {
-  color: inherit; }
-
+.navigation__link,
 .navigation__number {
   color: inherit; }
+  .navigation__link:hover,
+  .navigation__number:hover {
+    color: #70676a; }
+  .navigation__link:active, .navigation__link:focus,
+  .navigation__number:active,
+  .navigation__number:focus {
+    color: #979394; }
 
 .navigation__card {
   position: relative;
