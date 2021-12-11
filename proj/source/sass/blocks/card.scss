@@ -5,9 +5,15 @@
 	margin-bottom: 20px;
 }
 
+// .card__item {
+// 	display: flex;
+// 	flex-direction: column;
+// 	padding: 30px;
+// 	background-color: $button-color;
+// }
+
 .card__item {
-	display: flex;
-	flex-direction: column;
+	display: grid;
 	padding: 30px;
 	background-color: $button-color;
 }
@@ -17,7 +23,7 @@
 }
 
 .card__picture {
-	order: -1;
+	grid-row-start: 1;
 }
 
 .card__price {
