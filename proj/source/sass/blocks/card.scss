@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-columns: repeat(3, auto);
 	grid-gap: 50px;
+	margin-bottom: 20px;
 }
 
 .card__item {
@@ -27,4 +28,14 @@
 
 .card__link {
 	@include button;
+
+	&:hover {
+		color: #fff;
+		background-color: #3a2026;
+	}
+
+	&:active,
+	&:focus {
+		background-color: #3a2026;
+	}
 }

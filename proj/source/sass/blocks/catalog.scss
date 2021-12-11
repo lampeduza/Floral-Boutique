@@ -30,4 +30,14 @@
 .catalog__show {
 	@include secondButton;
 	grid-row: 4 / 5;
+	grid-column: 1 / -1;
+  justify-self: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+  	background-color: #e5e3e1;
+  	border-color: #706a6c;
+  }
 }

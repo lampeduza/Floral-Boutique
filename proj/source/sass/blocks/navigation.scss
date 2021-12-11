@@ -15,12 +15,18 @@
 	margin-right: 35px;
 }
 
-.navigation__link {
-	color: inherit;
-}
-
+.navigation__link,
 .navigation__number {
-	color: inherit;
+	color:  inherit;
+
+	&:hover {
+		color: #70676a;
+	}
+
+	&:active,
+	&:focus {
+		color: #979394;
+	}
 }
 
 .navigation__card {

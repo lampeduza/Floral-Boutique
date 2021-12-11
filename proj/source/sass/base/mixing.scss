@@ -32,6 +32,7 @@
   text-align: center;
   margin: 0 auto;
   border: none;
+  cursor: pointer;
 }
 
 /* secondButton */
@@ -40,11 +41,8 @@
   padding: 24px;
   background-color: $transparent-color;
   color: $base-color;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-top: 20px;
   width: 380px;
+  cursor: pointer;
 }
 
 /* select */
@@ -55,6 +53,7 @@
   padding: 21px 25px 21px 18px;
   color: inherit;
   background-color: transparent;
+  cursor: pointer;
 
   position: relative;
 }
