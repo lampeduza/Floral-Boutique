@@ -97,6 +97,10 @@ picture {
   background-size: 1240px 350px;
   width: 1240px;
   height: 350px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .catalog__container {
+      background-image: url("../img/background@x2.jpg");
+      background-size: 1240px 350px; } }
 
 .catalog__title {
   color: #59313b;
@@ -144,7 +148,7 @@ picture {
   margin: 15px 0 5px;
   text-align: center; }
 
-.card__image {
+.card__picture {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1; }
