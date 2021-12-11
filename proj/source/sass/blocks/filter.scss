@@ -5,10 +5,27 @@
 	grid-column-gap: 50px;
 }
 
+.filter__item {
+	position: relative;
+
+	// &--changed {
+	// 	transform: rotate(180deg);
+	// }
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 25px;
+		right: 10px;
+		width: 16px;
+		height: 8px;
+		background-image: url('../img/arrow-down.svg');
+		background-size: 16px 8px;
+		background-repeat: no-repeat;
+		pointer-events: none;
+	}
+}
+
 .filter__select {
 	@include select;
-	background-image: url('../img/arrow-down.svg');
-	background-size: 16px 8px;
-	background-repeat: no-repeat;
-	background-position: 97% 50%;
 }

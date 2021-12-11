@@ -21,7 +21,7 @@
   text-align: center;
 }
 
-/* button */
+/* for button */
 @mixin button {
   color: $button-color;
   background-color: $h1-color;
@@ -55,4 +55,6 @@
   padding: 21px 25px 21px 18px;
   color: inherit;
   background-color: transparent;
+
+  position: relative;
 }
