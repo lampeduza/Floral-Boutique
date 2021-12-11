@@ -11,7 +11,6 @@
       <a class="header__logo" href="index.html">
         <img class="header__image" src="img/logo.svg" width="177" height="17" alt="Логотип сайта Floral Boutique">
       </a>
-
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item"><a class="navigation__link" href="#">Каталог</a></li>
@@ -19,54 +18,52 @@
           <li class="navigation__item"><a class="navigation__link" href="#">Отзывы</a></li>
           <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
         </ul>
-
         <a class="navigation__number" href="tel:+79239995566">+7 (923) 999 55 66</a>
         <a class="navigation__card" href="#" aria-label="Корзина для товаров"></a>
       </nav>
     </header>
     <main class="main container">
-      <!-- catalog -->
       <section class="catalog">
         <div class="catalog__container">
           <h1 class="catalog__title">Каталог</h1>
         </div>
-
-        <!-- filter -->
-        <form class="filter" action="" method="post">
-          <ul class="filter__list">
-            <li class="filter__item">
-              <label class="visually-hidden" for="category">Категория</label>
-              <select class="filter__select filter__select--category" name="category" id="category">
-                <option value="value1" class="category__item" selected>Категория</option>
-                <option value="value2" class="category__item">value2</option>
-                <option value="value3" class="category__item">value3</option>
-                <option value="value4" class="category__item">value4</option>
-                <option value="value5" class="category__item">value5</option>
-              </select>
-            </li>
-            <li class="filter__item">
-              <label class="visually-hidden" for="flowers">Цветы</label>
-              <select class="filter__select filter__select--flowers" name="flowers" id="flowers">
-                <option value="value1" class="category__item" selected>Цветы</option>
-                <option value="value2" class="category__item">value2</option>
-                <option value="value3" class="category__item">value3</option>
-                <option value="value4" class="category__item">value4</option>
-                <option value="value5" class="category__item">value5</option>
-              </select>
-            </li>
-            <li class="filter__item">
-              <label class="visually-hidden" for="price">Цена</label>
-              <select class="filter__select filter__select--price" name="price" id="price">
-                <option value="value1" class="category__item" selected>Цена</option>
-                <option value="value2" class="category__item">value2</option>
-                <option value="value3" class="category__item">value3</option>
-                <option value="value4" class="category__item">value4</option>
-                <option value="value5" class="category__item">value5</option>
-              </select>
-            </li>
-          </ul>
-        </form>
-
+        <section class="filter">
+          <h2 class="visually-hidden">Фильтры:</h2>
+          <form class="filter__form" action="" method="post">
+            <ul class="filter__list">
+              <li class="filter__item">
+                <label class="visually-hidden" for="category">Категория</label>
+                <select class="filter__select filter__select--category" name="category" id="category">
+                  <option value="value1" class="category__item" selected>Категория</option>
+                  <option value="value2" class="category__item">value2</option>
+                  <option value="value3" class="category__item">value3</option>
+                  <option value="value4" class="category__item">value4</option>
+                  <option value="value5" class="category__item">value5</option>
+                </select>
+              </li>
+              <li class="filter__item">
+                <label class="visually-hidden" for="flowers">Цветы</label>
+                <select class="filter__select filter__select--flowers" name="flowers" id="flowers">
+                  <option value="value1" class="category__item" selected>Цветы</option>
+                  <option value="value2" class="category__item">value2</option>
+                  <option value="value3" class="category__item">value3</option>
+                  <option value="value4" class="category__item">value4</option>
+                  <option value="value5" class="category__item">value5</option>
+                </select>
+              </li>
+              <li class="filter__item">
+                <label class="visually-hidden" for="price">Цена</label>
+                <select class="filter__select filter__select--price" name="price" id="price">
+                  <option value="value1" class="category__item" selected>Цена</option>
+                  <option value="value2" class="category__item">value2</option>
+                  <option value="value3" class="category__item">value3</option>
+                  <option value="value4" class="category__item">value4</option>
+                  <option value="value5" class="category__item">value5</option>
+                </select>
+              </li>
+            </ul>
+          </form>
+        </section>
         <ul class="catalog__list card">
           <li class="card__item">
             <h2 class="card__title">Букет «Весна»</h2>
@@ -150,24 +147,20 @@
             <button class="card__link" type="button">Заказать</button>
           </li>
         </ul>
-
         <button class="catalog__show" type="button">Смотреть еще</button>
       </section>
     </main>
-
     <footer class="footer">
       <div class="footer__wrapper container">
         <a class="header__logo" href="index.html">
           <img class="header__image" src="img/logo.svg" width="177" height="17" alt="Логотип сайта Floral Boutique">
         </a>
-
         <ul class="navigation__list footer__list">
           <li class="navigation__item"><a class="navigation__link" href="#">Каталог</a></li>
           <li class="navigation__item"><a class="navigation__link" href="#">Подписка</a></li>
           <li class="navigation__item"><a class="navigation__link" href="#">Отзывы</a></li>
           <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
         </ul>
-
         <div class="social">
           <ul class="social__list">
             <li class="social__item"><a class="social__link social__link--instagram" href="#" aria-label="Instagram"></a></li>
