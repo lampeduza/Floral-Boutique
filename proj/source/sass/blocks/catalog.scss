@@ -7,13 +7,14 @@
 
 .catalog__container {
 	background-image: url('../img/background.jpg');
-	background-size: 1240px 350px;
-	width: 1240px;
-	height: 350px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 350px;
 
 	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/background@x2.jpg");
-    background-size: 1240px 350px;
+    background-size: cover;
   }
 }
 
