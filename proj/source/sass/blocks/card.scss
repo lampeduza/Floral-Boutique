@@ -14,6 +14,7 @@
 
 .card__item {
 	display: grid;
+	justify-items: center;
 	padding: 30px;
 	background-color: $button-color;
 }
@@ -29,7 +30,6 @@
 .card__price {
 	margin: 0 0 20px 0;
 	color: $base-color;
-	text-align: center;
 }
 
 .card__link {
