@@ -3,7 +3,7 @@
 /* reset list */
 /* h1 */
 /* h2 */
-/* button */
+/* for button */
 /* secondButton */
 /* select */
 html {
@@ -177,6 +177,20 @@ picture {
   grid-template-columns: repeat(3, 380px);
   grid-column-gap: 50px; }
 
+.filter__item {
+  position: relative; }
+  .filter__item::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    width: 16px;
+    height: 8px;
+    background-image: url("../img/arrow-down.svg");
+    background-size: 16px 8px;
+    background-repeat: no-repeat;
+    pointer-events: none; }
+
 .filter__select {
   width: 100%;
   -webkit-appearance: none;
@@ -186,10 +200,7 @@ picture {
   padding: 21px 25px 21px 18px;
   color: inherit;
   background-color: transparent;
-  background-image: url("../img/arrow-down.svg");
-  background-size: 16px 8px;
-  background-repeat: no-repeat;
-  background-position: 97% 50%; }
+  position: relative; }
 
 .navigation {
   display: grid;
