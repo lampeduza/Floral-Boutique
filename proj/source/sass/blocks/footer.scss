@@ -7,10 +7,15 @@
 
 .footer__wrapper {
 	display: grid;
-	grid-template-columns: 177px auto 110px;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-column-gap: 60px;
 	align-items: center;
 }
 
-.footer__list {
-	margin-left: 250px;
+.footer__logo {
+	justify-self: start;
+}
+
+.footer__navigation {
+	justify-self: center;
 }
