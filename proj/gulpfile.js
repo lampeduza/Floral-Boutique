@@ -70,7 +70,7 @@ gulp.task("images", function() {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imageminOptipng({optimizationLevel: 3}),
-      imageminJpegtran({quality: 80, progressive: true}),
+      imageminJpegtran({quality: 75, progressive: true}),
       imagemin.svgo()
     ]))
 
@@ -79,7 +79,7 @@ gulp.task("images", function() {
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 80}))
+    .pipe(webp({quality: 75}))
     .pipe(gulp.dest("source/img"));
 });
 
